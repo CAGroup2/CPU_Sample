@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 18 14:18:45 2024
+# Process ID: 8912
+# Current directory: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27128 C:\Users\92756\Documents\GitHub\CPU_Sample\func_test_v0.01\soc_sram_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/add.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_5_32.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_6_64.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mmu.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/regfile.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_top.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/div.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/IF.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/fa.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/ID.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_core.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/defines.vh C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/CTRL.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/WB.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/alu.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/MEM.v}
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/92756/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset clk_pll
+set_property top clk_pll [get_fileset clk_pll]
+move_files -fileset [get_fileset clk_pll] [get_files -of_objects [get_fileset sources_1] C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+generate_target all [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci] -directory C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/92756/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset data_ram
+set_property top data_ram [get_fileset data_ram]
+move_files -fileset [get_fileset data_ram] [get_files -of_objects [get_fileset sources_1] C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram.xci]
+generate_target all [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci] -directory C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/92756/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset inst_ram
+set_property top inst_ram [get_fileset inst_ram]
+move_files -fileset [get_fileset inst_ram] [get_files -of_objects [get_fileset sources_1] C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram.xci]
+launch_run {clk_pll_synth_1 data_ram_synth_1 inst_ram_synth_1}
+wait_on_run clk_pll_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+
+wait_on_run clk_pll_synth_1
+wait_on_run data_ram_synth_1
+wait_on_run inst_ram_synth_1
+
+launch_simulation
+source tb_top.tcl
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+close_sim

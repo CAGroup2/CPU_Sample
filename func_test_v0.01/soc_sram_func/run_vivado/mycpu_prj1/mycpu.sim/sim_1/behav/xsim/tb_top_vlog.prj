@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../SampleCPU/lib" --include "../../../../../../rtl/xilinx_ip/clk_pll" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../../rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../../rtl/xilinx_ip/data_ram/sim/data_ram.v" \
+"../../../../../../rtl/xilinx_ip/inst_ram/sim/inst_ram.v" \
+"../../../../../../../../SampleCPU/CTRL.v" \
+"../../../../../../../../SampleCPU/EX.v" \
+"../../../../../../../../SampleCPU/ID.v" \
+"../../../../../../../../SampleCPU/IF.v" \
+"../../../../../../../../SampleCPU/MEM.v" \
+"../../../../../../../../SampleCPU/WB.v" \
+"../../../../../../../../SampleCPU/lib/mul/add.v" \
+"../../../../../../../../SampleCPU/lib/alu.v" \
+"../../../../../../rtl/BRIDGE/bridge_1x2.v" \
+"../../../../../../rtl/CONFREG/confreg.v" \
+"../../../../../../../../SampleCPU/lib/decoder_5_32.v" \
+"../../../../../../../../SampleCPU/lib/decoder_6_64.v" \
+"../../../../../../../../SampleCPU/lib/div.v" \
+"../../../../../../../../SampleCPU/lib/mul/fa.v" \
+"../../../../../../../../SampleCPU/lib/mmu.v" \
+"../../../../../../../../SampleCPU/lib/mul/mul.v" \
+"../../../../../../../../SampleCPU/mycpu_core.v" \
+"../../../../../../../../SampleCPU/mycpu_top.v" \
+"../../../../../../../../SampleCPU/lib/regfile.v" \
+"../../../../../../rtl/soc_lite_top.v" \
+"../../../../../../testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

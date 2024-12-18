@@ -1,0 +1,842 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 18 14:28:07 2024
+# Process ID: 10100
+# Current directory: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1
+# Command line: vivado.exe -log soc_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+# Log file: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_lite_top.vds
+# Journal file: C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc_lite_top.tcl -notrace
+Command: synth_design -top soc_lite_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25108 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 833.344 ; gain = 233.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:65]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_core' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_core.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IF' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/IF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (2#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/IF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ID' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/ID.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/regfile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (3#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/regfile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decoder_6_64' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_6_64.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_6_64.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_6_64' (4#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_6_64.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decoder_5_32' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_5_32.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_5_32.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_5_32' (5#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/decoder_5_32.v:2]
+WARNING: [Synth 8-3848] Net stallreq in module/entity ID does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/ID.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (6#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/ID.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EX' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mul' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:78]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:97]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:116]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:135]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:154]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:173]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:192]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:211]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:230]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:249]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:268]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:287]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:306]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:325]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:344]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:363]
+INFO: [Synth 8-226] default block is never used [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:382]
+INFO: [Synth 8-6157] synthesizing module 'add' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/add.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/fa.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (8#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/fa.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'add' (9#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/add.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mul' (10#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mul/mul.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/div.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_op1_reg was removed.  [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/div.v:64]
+WARNING: [Synth 8-6014] Unused sequential element temp_op2_reg was removed.  [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/div.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'div' (11#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/div.v:23]
+WARNING: [Synth 8-3848] Net data_sram_en in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:12]
+WARNING: [Synth 8-3848] Net data_sram_wen in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:13]
+WARNING: [Synth 8-3848] Net data_sram_addr in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:14]
+WARNING: [Synth 8-3848] Net data_sram_wdata in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:15]
+WARNING: [Synth 8-3848] Net mul_signed in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:98]
+WARNING: [Synth 8-3848] Net inst_div in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:111]
+WARNING: [Synth 8-3848] Net inst_divu in module/entity EX does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'EX' (12#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/EX.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/MEM.v:2]
+WARNING: [Synth 8-3848] Net mem_result in module/entity MEM does not have driver. [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/MEM.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (13#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/MEM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'WB' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/WB.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (14#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/WB.v:2]
+INFO: [Synth 8-6157] synthesizing module 'CTRL' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/CTRL.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'CTRL' (15#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/CTRL.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_core' (16#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_core.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mmu' [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mmu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mmu' (17#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/lib/mmu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (18#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/SampleCPU/mycpu_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'inst_ram' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_ram' (19#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (20#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/BRIDGE/bridge_1x2.v:50]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (21#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/.Xil/Vivado-10100-LAPTOP-HJ1F0PA2/realtime/data_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (22#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/CONFREG/confreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (23#1) [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/soc_lite_top.v:65]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[31]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[30]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[29]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[28]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[27]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[26]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[25]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[24]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[23]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[22]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[21]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[20]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[19]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[18]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[17]
+WARNING: [Synth 8-3331] design confreg has unconnected port conf_addr[16]
+WARNING: [Synth 8-3331] design CTRL has unconnected port rst
+WARNING: [Synth 8-3331] design WB has unconnected port stall[3]
+WARNING: [Synth 8-3331] design WB has unconnected port stall[2]
+WARNING: [Synth 8-3331] design WB has unconnected port stall[1]
+WARNING: [Synth 8-3331] design WB has unconnected port stall[0]
+WARNING: [Synth 8-3331] design MEM has unconnected port stall[5]
+WARNING: [Synth 8-3331] design MEM has unconnected port stall[2]
+WARNING: [Synth 8-3331] design MEM has unconnected port stall[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port stall[0]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[31]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[30]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[29]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[28]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[27]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[26]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[25]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[24]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[23]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[22]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[21]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[20]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[19]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[18]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[17]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[16]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[15]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[14]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[13]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[12]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[11]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[10]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[9]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[8]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[7]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[6]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[5]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[4]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[3]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[2]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[1]
+WARNING: [Synth 8-3331] design MEM has unconnected port data_sram_rdata[0]
+WARNING: [Synth 8-3331] design mul has unconnected port clk
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_en
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wen[3]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wen[2]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wen[1]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wen[0]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[31]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[30]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[29]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[28]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[27]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[26]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[25]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[24]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[23]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[22]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[21]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[20]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[19]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[18]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[17]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[16]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[15]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[14]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[13]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[12]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[11]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[10]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[9]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[8]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[7]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[6]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[5]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[4]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[3]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[2]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[1]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_addr[0]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wdata[31]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wdata[30]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wdata[29]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wdata[28]
+WARNING: [Synth 8-3331] design EX has unconnected port data_sram_wdata[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 911.293 ; gain = 311.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 911.293 ; gain = 311.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 911.293 ; gain = 311.055
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 911.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Finished Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Finished Parsing XDC File [c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
+Parsing XDC File [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'clk_pll/inst/plle2_adv_inst/CLKOUT1'. [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc:91]
+WARNING: [Vivado 12-508] No pins matched 'clk_pll/inst/plle2_adv_inst/CLKOUT0'. [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc:92]
+Finished Parsing XDC File [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/soc_lite_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/soc_lite.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1055.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1055.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for \pll.clk_pll . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+INFO: [Synth 8-5544] ROM "num_csn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_a_g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 15    
+	   2 Input      1 Bit       Adders := 15    
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 975   
++---Registers : 
+	              159 Bit    Registers := 1     
+	               76 Bit    Registers := 1     
+	               70 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 25    
+	   4 Input     65 Bit        Muxes := 18    
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 15    
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   6 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module soc_lite_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module IF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ID 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fa 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module mul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 15    
+	   2 Input      1 Bit       Adders := 15    
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 20    
+	   4 Input     65 Bit        Muxes := 16    
+	   2 Input     33 Bit        Muxes := 1     
+Module div 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 5     
+	   4 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+Module EX 
+Detailed RTL Component Info : 
++---Registers : 
+	              159 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               76 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               70 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bridge_1x2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module confreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 20    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[0]' (FDRE) to 'confreg/led_rg1_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[4]' (FDRE) to 'confreg/num_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[4]' (FDRE) to 'confreg/led_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[4]' (FDRE) to 'confreg/led_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[8]' (FDRE) to 'confreg/num_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[8]' (FDRE) to 'confreg/led_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[8]' (FDRE) to 'confreg/led_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[12]' (FDRE) to 'confreg/num_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[12]' (FDRE) to 'confreg/led_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[12]' (FDRE) to 'confreg/led_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[16]' (FDRE) to 'confreg/num_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[16]' (FDRE) to 'confreg/num_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[16]' (FDRE) to 'confreg/num_data_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[16] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[20]' (FDRE) to 'confreg/num_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[20]' (FDRE) to 'confreg/num_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[20]' (FDRE) to 'confreg/num_data_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[20] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[24]' (FDRE) to 'confreg/num_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[24]' (FDRE) to 'confreg/num_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[24]' (FDRE) to 'confreg/num_data_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[24] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[28]' (FDRE) to 'confreg/num_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[28]' (FDRE) to 'confreg/num_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[28]' (FDRE) to 'confreg/num_data_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[28] )
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[1]' (FDRE) to 'confreg/led_rg1_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[5]' (FDRE) to 'confreg/num_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[5]' (FDRE) to 'confreg/led_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[5]' (FDRE) to 'confreg/led_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[9]' (FDRE) to 'confreg/num_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[9]' (FDRE) to 'confreg/led_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[9]' (FDRE) to 'confreg/led_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[13]' (FDRE) to 'confreg/num_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[13]' (FDRE) to 'confreg/led_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[13]' (FDRE) to 'confreg/led_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[17]' (FDRE) to 'confreg/num_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[17]' (FDRE) to 'confreg/num_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[17]' (FDRE) to 'confreg/num_data_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[17] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[21]' (FDRE) to 'confreg/num_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[21]' (FDRE) to 'confreg/num_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[21]' (FDRE) to 'confreg/num_data_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[21] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[25]' (FDRE) to 'confreg/num_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[25]' (FDRE) to 'confreg/num_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[25]' (FDRE) to 'confreg/num_data_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[25] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[29]' (FDRE) to 'confreg/num_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[29]' (FDRE) to 'confreg/num_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[29]' (FDRE) to 'confreg/num_data_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[29] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[2]' (FDRE) to 'confreg/num_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[2]' (FDRE) to 'confreg/led_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[2]' (FDRE) to 'confreg/led_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[6]' (FDRE) to 'confreg/num_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[6]' (FDRE) to 'confreg/led_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[6]' (FDRE) to 'confreg/led_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[10]' (FDRE) to 'confreg/num_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[10]' (FDRE) to 'confreg/led_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[10]' (FDRE) to 'confreg/led_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[14]' (FDRE) to 'confreg/num_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[14]' (FDRE) to 'confreg/led_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[14]' (FDRE) to 'confreg/led_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[18]' (FDRE) to 'confreg/num_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[18]' (FDRE) to 'confreg/num_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[18]' (FDRE) to 'confreg/num_data_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[18] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[22]' (FDRE) to 'confreg/num_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[22]' (FDRE) to 'confreg/num_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[22]' (FDRE) to 'confreg/num_data_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[22] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[26]' (FDRE) to 'confreg/num_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[26]' (FDRE) to 'confreg/num_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[26]' (FDRE) to 'confreg/num_data_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[26] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[30]' (FDRE) to 'confreg/num_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[30]' (FDRE) to 'confreg/num_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[30]' (FDRE) to 'confreg/num_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[3]' (FDRE) to 'confreg/num_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[3]' (FDRE) to 'confreg/led_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[3]' (FDRE) to 'confreg/led_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[7]' (FDRE) to 'confreg/num_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[7]' (FDRE) to 'confreg/led_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[7]' (FDRE) to 'confreg/led_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[11]' (FDRE) to 'confreg/num_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[11]' (FDRE) to 'confreg/led_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[11]' (FDRE) to 'confreg/led_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[15]' (FDRE) to 'confreg/num_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_data_reg[15]' (FDRE) to 'confreg/led_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[15]' (FDRE) to 'confreg/led_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[19]' (FDRE) to 'confreg/num_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[19]' (FDRE) to 'confreg/num_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[19]' (FDRE) to 'confreg/num_data_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[19] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[23]' (FDRE) to 'confreg/num_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[23]' (FDRE) to 'confreg/num_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[23]' (FDRE) to 'confreg/num_data_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[23] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[27]' (FDRE) to 'confreg/num_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[27]' (FDRE) to 'confreg/num_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[27]' (FDRE) to 'confreg/num_data_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[27] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[31]' (FDRE) to 'confreg/num_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_data_reg[31]' (FDRE) to 'confreg/num_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[31]' (FDRE) to 'confreg/num_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/num_data_reg[31] )
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[0]' (FDRE) to 'confreg/led_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg1_data_reg[1]' (FDRE) to 'confreg/led_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[0]' (FDRE) to 'confreg/led_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'confreg/led_rg0_data_reg[1]' (FDRE) to 'confreg/led_data_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\confreg/led_data_reg[15] )
+INFO: [Synth 8-3886] merging instance 'confreg/num_a_g_reg[1]' (FDR) to 'confreg/num_a_g_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_a_g_reg[2]' (FDR) to 'confreg/num_a_g_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_a_g_reg[3]' (FDR) to 'confreg/num_a_g_reg[6]'
+INFO: [Synth 8-3886] merging instance 'confreg/num_a_g_reg[4]' (FDR) to 'confreg/num_a_g_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_mycpu_core/u_EX/u_div/FSM_sequential_state_reg[1]) is unused and will be removed from module soc_lite_top.
+WARNING: [Synth 8-3332] Sequential element (cpu/u_mycpu_core/u_EX/u_div/FSM_sequential_state_reg[0]) is unused and will be removed from module soc_lite_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++----------------------------------+---------------+-----------+----------------------+--------------+
+|Module Name                       | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------------+---------------+-----------+----------------------+--------------+
+|\cpu/u_mycpu_core/u_ID /u_regfile | reg_array_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++----------------------------------+---------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++----------------------------------+---------------+-----------+----------------------+--------------+
+|Module Name                       | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------------+---------------+-----------+----------------------+--------------+
+|\cpu/u_mycpu_core/u_ID /u_regfile | reg_array_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++----------------------------------+---------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_pll       |         1|
+|2     |inst_ram      |         1|
+|3     |data_ram      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_pll  |     1|
+|2     |data_ram |     1|
+|3     |inst_ram |     1|
+|4     |CARRY4   |    37|
+|5     |LUT1     |     4|
+|6     |LUT2     |    38|
+|7     |LUT3     |    15|
+|8     |LUT4     |    64|
+|9     |LUT5     |    80|
+|10    |LUT6     |   102|
+|11    |RAM32M   |    12|
+|12    |FDRE     |   254|
+|13    |FDSE     |    37|
+|14    |IBUF     |     5|
+|15    |OBUF     |    39|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------+-----------+------+
+|      |Instance          |Module     |Cells |
++------+------------------+-----------+------+
+|1     |top               |           |   753|
+|2     |  confreg         |confreg    |   100|
+|3     |  cpu             |mycpu_top  |   542|
+|4     |    u_mycpu_core  |mycpu_core |   542|
+|5     |      u_EX        |EX         |   205|
+|6     |        u_alu     |alu        |    31|
+|7     |      u_ID        |ID         |   188|
+|8     |        u_regfile |regfile    |   102|
+|9     |      u_IF        |IF         |    72|
+|10    |      u_MEM       |MEM        |    38|
+|11    |      u_WB        |WB         |    39|
++------+------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1055.535 ; gain = 311.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1055.535 ; gain = 455.297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1055.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+217 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1055.535 ; gain = 757.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.535 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/92756/Documents/GitHub/CPU_Sample/func_test_v0.01/soc_sram_func/run_vivado/mycpu_prj1/mycpu.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 14:28:37 2024...
