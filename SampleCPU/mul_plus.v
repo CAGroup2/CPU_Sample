@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+//乘法器实现
 module mul_plus(
     //时钟信号
     input clk,
@@ -52,7 +53,7 @@ module mul_plus(
             multiplicand <= {multiplicand[62:0],1'b0};  //左移1位
         end
         else if (start_i) begin
-            multiplicand <= {32'd0,op1_absolute};
+            multiplicand <= {32'd0,op1_absolute};   //初始化
         end
     end
     
@@ -61,7 +62,7 @@ module mul_plus(
             multiplier <= {1'b0,multiplier[31:1]};  //右移1位
         end
         else if(start_i) begin
-            multiplier <= op2_absolute;
+            multiplier <= op2_absolute; //初始化
         end
     end
     //若当前时钟周期的乘数末位为1，则将当前时钟周期的被乘数加到临时结果上
